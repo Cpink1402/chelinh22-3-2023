@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 20px;
+
+}
+
+.item {
+    background-color: antiquewhite;
+    border: 1px solid blue;
+    height: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 200px 53px;
+}

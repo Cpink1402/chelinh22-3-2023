@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // nhập rate,bassiSaraly, commissi0n,
+        let rate= Number ( prompt("nhập vào hệ số lương"));
+        let basicSalary = + prompt ("nhập vào hệ số lương cơ bản");
+        let commission = parseFloat(prompt("nhập vào tỷ lệ hoa hông"));
+        //b2 tính lương
+        let salary = ( rate+ commission) * basicSalary;
+        //b3 in lương
+        document.write("lương nhân viên là " + salary);
+    </script>
+</body>
+</html>

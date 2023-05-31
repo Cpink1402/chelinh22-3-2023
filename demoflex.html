@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-transform: uppercase;
+            margin: 0px 0px 5px 0px; 
+            display:flex;
+            flex-direction:column-reverse ; 
+        }
+        
+        h1::before{
+            content:"";
+
+            border-bottom: 5px solid red;
+            width: 100px;
+        }
+        /* .line{
+            border-bottom: 5px solid yellow;
+            width:100px;
+        } */
+        wrap{
+            display:flex
+
+        }
+        item-contact{
+
+        }
+        input,
+        texarea{
+            width:90%;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: aqua;
+            border: unset;
+            padding: 4px 12px;
+            border-radius: 6px;
+            cursor:pointer;
+            color:aliceblue
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="title">
+            <h1>contacts</h1>
+            <div class="line"></div>
+        </div>
+        <div class="left">
+            <div class="title-content">
+                contact info
+            </div>
+            <div class="icon-contact"></div>
+            <div>icon</div>
+            <div class="contact">
+                <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos dolorem eveniet cumque doloribus, tenetur, expedita nobis officia sapiente aliquid beatae! Commodi, exercitationem sed sit consectetur doloribus ullam asperiores atque!</div>
+            </div>
+        </div>
+        <div class="right">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero, modi obcaecati distinctio nulla soluta sed accusamus esse exercitationem, facere ipsam. Illo, ratione saepe. Sequi dolorem aut eius fugit similique.</h3>
+            <input type="text" placeholder="youname"
+        </div>
+    </div>
+</body>
+</html>

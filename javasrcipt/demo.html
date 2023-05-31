@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var Student=[studentId,studentName,age,mark_html,mak_css,mark_js,avgMark,rank];
+        studentId.length=5;
+        studentName.startWith="S";
+    </script> -->
+    <script>
+
+// Khai báo mảng 2 chiều để lưu trữ thông tin sinh viên
+var studentArray = [];
+
+// Hàm nhập thông tin sinh viên
+function inputStudentInfo() {
+  for (var i = 0; i < 5; i++) {
+    var student = {};
+    
+    // Nhập thông tin mã sinh viên
+    while (true) {
+      var studentId = prompt("Nhập mã sinh viên:");
+      if (studentId.length === 5 && studentId.startsWith("S")) {
+        student.studentId = studentId;
+        break;
+      } else {
+        alert("Mã sinh viên không hợp lệ. Vui lòng nhập lại.");
+      }
+    }
+    
+    // Nhập thông tin tên sinh viên
+    while (true) {
+      var studentName = prompt("Nhập tên sinh viên:");
+      if (studentName.length >= 6 && studentName.length <= 30) {
+        student.studentName = studentName;
+        break;
+      } else {
+        alert("Tên sinh viên không hợp lệ. Vui lòng nhập lại.");
+      }
+    }
+    
+    // Nhập thông tin tuổi
+    while (true) {
+      var age = parseInt(prompt("Nhập tuổi sinh viên:"));
+      if (age >= 18 && age <= 30) {
+        student.age = age;
+        break;
+      } else {
+        alert("Tuổi không hợp lệ. Vui lòng nhập lại.");
+      }
+    }
+    
+    // Nhập thông tin điểm HTML
+    while (true) {
+      var mark_html = parseFloat(prompt("Nhập điểm HTML:"));
+      if (mark_html >= 0 && mark_html <= 10) {
+        student.mark_html = mark_html;
+        break;
+      } else {
+        alert("Điểm HTML không hợp lệ. Vui lòng nhập lại.");
+      }
+    }
+    
+    // Nhập thông tin điểm CSS
+    while (true) {
+      var mark_css = parseFloat(prompt("Nhập điểm CSS:"));
+      if (mark_css >= 0 && mark_css <= 10) {
+        student.mark_css = mark_css;
+        break;
+      } else {
+        alert("Điểm CSS không hợp lệ. Vui lòng nhập lại.");
+      }
+    }
+    
+    // Nhập thông tin điểm JavaScript
+    while (true) {
+      var mark_js = parseFloat(prompt("Nhập điểm JavaScript:"));
+      if (mark_js >= 0 && mark_js <= 10) {
+        student.mark_js = mark_js;
+        break;
+      } else {
+        alert("Điểm JavaScript không hợp lệ. Vui lòng nhập lại.");
+      }
+    }
+    
+    // Tính điểm trung bình
+    student.avgMark = (student.mark_html + student.mark_css + student.mark_js) / 3;
+    
+    // Xếp loại
+    if (student.avgMark >= 8) {
+      student.rank = "Giỏi";
+    } else if (student.avgMark >= 6.5) {
+      student.rank = "Khá";
+    } else if (student.avgMark >= 5) {
+      student.rank = "Trung bình";
+    } else {
+      student.rank = "Yếu";
+    }
+
+    // Thêm sinh viên vào mảng
+    studentArray.push(student);
+  }
+}
+
+// Gọi hàm để nhập thông tin sinh viên
+inputStudentInfo();
+
+// In thông tin sinh viên trong mảng
+console.log("Thông tin sinh viên:");
+for (var i = 0; i < studentArray.length; i++) {
+  var student = studentArray[i];
+  console.log("Sinh viên " + (i + 1));
+  console.log("Mã sinh viên: " + student.studentId);
+  console.log("Tên sinh viên: " + student.studentName);
+  console.log("Tuổi: " + student.age);
+  console.log("Điểm HTML: " + student.mark_html);
+  console.log("Điểm CSS: " + student.mark_css);
+  console.log("Điểm JavaScript: " + student.mark_js);
+  console.log("Điểm trung bình: " + student.avgMark);
+  console.log("Xếp loại: " + student.rank);
+  console.log("----------------------");
+}
+
+    </script>
+</body>
+</html>

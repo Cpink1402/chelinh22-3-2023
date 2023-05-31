@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        var student = [];
+        for (var i = 0; i < 5; i++) {
+            var student = {};
+    
+            while (true) {
+                var studentId = prompt("Nhập mã sinh viên:");
+                if (studentId.length === 5, studentId.startsWith("S")) {
+                    student.studentId = studentId;
+                    break;
+                } else {
+                    alert("Mã sinh viên không hợp lệ.");
+                }
+            }
+            while(true){
+                var studentName = prompt(" Nhập tên sinh viên");
+                if(studentName.length >=6, studentName.length<=30){
+                    student.studentName=studentName;
+
+                }else{
+                    alert("Tên sinh viên không hợp lệ");
+                }
+            }
+            while(true){
+                var age = prompt(" Tuổi sinh viên:");
+                if( age.length>=18, age.length<=30){
+                    
+                }
+            }
+        }
+    </Script>
+</body>
+</html>

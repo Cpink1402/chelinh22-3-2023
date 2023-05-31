@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let html = Number(prompt(" nhập điểm html"));
+        let css = Number(prompt(" nhập điểm css"));
+        let js = Number(prompt(" nhập điểm js"));
+
+        let avgMark = (html+css+js) / 3;
+
+        let xepLoai;
+        if (avgMark <5 ){
+            xepLoai= "yếu";
+        }else if (avgMark <6 ){
+            xepLoai = "kém";
+        }else if (avgMark <7 ){
+            xepLoai = "trung bình";
+        }
+        else if (avgMark <8 ){
+            xepLoai = "khá";
+        }else if (avgMark <9 ){
+            xepLoai = "khá";
+        }else {
+            xepLoai= "giỏi";        }
+
+            alert ("điểm trung bình:" + avgMark + "xếp loại" + xepLoai);
+
+    </script>
+</body>
+</html>

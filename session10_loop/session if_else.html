@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //xây dựng ứng dụng xem phim chỉ có 18 tuổi đc xem
+        //dưới 18 thì k được xem
+        //b1. nhập tuôi xem phim
+        let age= Number (prompt("nhập vào tuổi"));
+        //b2 kiểm tra tuổi
+        debugger;
+        if(age>=18){
+            alert("xem phim");
+        } else{
+            alert("không được xem");
+        }
+        // in ra so dư trong phep chia 3
+        debugger;
+        if(age%3==0){
+            alert("tuỏi chỉa hết cho 3");
+        }else if ( age%3==1){
+            alert("tuổi chia 3 dư e1");
+        }else{
+            alert("tuổi chia 3 dư 2");
+        }
+        //in ra số dư trong phép chia 5 
+        debugger;
+        if(age%5==0){
+            alert("chia hết cho 5");
+        }else if(age%5==1){
+            alert("chia 5 dư 1");
+        
+        }else if(age%5 ==2){
+            alert("tuỏi chia 5 dư2");
+        }else if(age%5==3){
+            alert("chia 5 dư 3")
+        }else{
+            alert("chia 5 dư 4");
+        }
+        // nhập vào giới tính và mưc độ xinh đẹp--> in ra người đpej nếu giới tính nữ là x
+        let sex= prompt("nhập vào giới tính của hà:");
+        let beautiful = prompt("bạn xinh hay xấu");
+        if(sex=="nữ"&& beautiful == "xinh"){
+            alert("hà là hotgirl ");
+        }
+        //if ...else nested
+        //kiểm tra tuổi có chia hết cho 2 và 3 không.
+        if( age%2==0){
+            if(age%3==0){
+                alert ("chia het cho 3 và 2");
+            }
+        }
+    </script>
+</body>
+</html>
